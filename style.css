@@ -53,7 +53,7 @@ main {
 }
 
 #landing-image {
-  background-image: url(camera.jpg);
+  background-image: url(camera3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,7 +104,45 @@ footer {
   color: #333;
 }
 
+.copyright {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.copyright:hover {
+  background: #ccc;
+}
+
 footer h3 {
   font-size: 3rem;
   margin-bottom: 0;
+}
+
+/*screen sizes 500px and up*/
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/*screen sizes 700px and up*/
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
 }
